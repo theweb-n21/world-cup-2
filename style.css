@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    max-width: 1400px;
+    margin: 0px auto;
+}
+
+
+/*  <!-- ===== header banner =====--> */
+header {
+    width: 100%;
+    height: 550px;
+
+
+}
+
+.banner {
+    background-color: #161616;
+    width: 90%;
+    height: 100%;
+    margin: 0px auto;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+
+.banner-text {
+    width: 50%;
+    transition: transform 2s ease-in-out;
+
+}
+
+.banner-text:hover {
+    transform: scale(90%);
+
+}
+
+.banner-text h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 4em;
+    line-height: 80px;
+}
+
+.banner-text p {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.banner-text button {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #DD0000;
+    color: #FFFFFF;
+    font-size: 1.25em;
+    font-weight: 400;
+    transition: all 2s ease-in-out;
+    cursor: pointer;
+
+}
+
+.banner-text button:hover {
+    background-color: #FFFFFF;
+    color: #DD0000;
+}
+
+.banner-image {
+    width: 40%;
+    height: 110%;
+    transition: transform 2s ease-in-out;
+
+}
+
+.banner-image:hover {
+    transform: scale(50%)
+}
+
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/*  <!-- ===== left side navbar===== --> */
+main {
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+}
+
+aside {
+    width: 312px;
+    height: 312px;
+    background-color: #161616;
+    border-radius: 30px;
+
+}
+
+.left-nav {
+    width: 312px;
+    height: 100%;
+}
+
+.left-nav-ul {
+    width: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding: 15px;
+}
+
+.left-nav-ul li {
+    width: 100%;
+    list-style: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #FFFFFF;
+
+}
+
+.left-nav-ul li:last-child {
+    background-color: #DD0000;
+
+}
+
+.left-nav-ul li:last-child a {
+    color: #FFFFFF;
+}
+
+.left-nav-ul li>a {
+    font-family: 'Poppins', sans-serif;
+    color: #161616;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 400;
+
+
+}
+
+/*  <!-- =====Right side transfer-card ===== --> */
+.transfer-card {
+    margin-left: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.card-inner-div {
+    box-shadow: 0px 0px 10px 5px gray;
+    height: 362px;
+
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-inner-div:hover {
+    transform: scale(105%);
+}
+
+.card-image {
+    height: 40%;
+
+
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+
+
+}
+
+.card-text {
+    padding: 15px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card-text button {
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-button {
+
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.view-button button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    display: none;
+    padding: 10px 25px;
+    background-color: #DD0000;
+    color: #FFFFFF;
+    border-radius: 5px;
+    transition: all 2s ease-in-out;
+}
+.view-button button:hover{
+    background-color: #FFFFFF;
+    color: #DD0000;
+}
+.fa-clock,.fa-comment-dots{
+    color: #d3cfcf;
+    cursor: pointer;
+    
+}
+
+/*  <!-- ===== footer ===== --> */
+footer {
+    width: 100%;
+    height: 444px;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav-bar {
+    width: 80%;
+}
+
+.footer-text h1 {
+    color: #FFFFFF;
+    font-weight: 600;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-nav-ul {
+    margin-top: 50px;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+
+}
+
+.footer-nav-ul li {
+    list-style: none;
+}
+
+.footer-nav-ul li a {
+    text-decoration: none;
+    color: #B9B9B9;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.social-logo img{
+    width: 50px;
+    transition:transform 0.5s ease-in-out ;
+}
+.social-logo img:hover{
+    transform: scale(150%);
+}
+.social-logo{
+    width: 50%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+/* <!-- =====Right side match-card ===== --> */
+
+.match-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    margin-left: 15px;
+}
+.card-div{
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    height: 242px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flag{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+.image-div{
+    width: 50%;
+    height: 100%;
+    margin-bottom: 10px;
+    
+}
+.image-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text-div{
+    margin-top: 10px;
+    text-align: center;
+}
